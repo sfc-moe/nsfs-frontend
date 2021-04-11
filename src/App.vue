@@ -2,18 +2,14 @@
 el-container
   el-main
     img(alt="Vue logo" src="./assets/logo.png")
-    hello-world(:msg="$t('message.hello')")
+    router-view
 </template>
 
 <script lang="ts">
   import { defineComponent } from 'vue';
-  import HelloWorld from './components/HelloWorld.vue';
 
   export default defineComponent({
     name: 'App',
-    components: {
-      HelloWorld,
-    },
   });
 </script>
 
