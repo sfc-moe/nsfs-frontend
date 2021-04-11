@@ -1,6 +1,8 @@
 <template lang="pug">
-img(alt="Vue logo" src="./assets/logo.png")
-HelloWorld(msg="Hello Vue 3 + TypeScript + Vite")
+el-container
+  el-main
+    img(alt="Vue logo" src="./assets/logo.png")
+    hello-world(:msg="$t('message.hello')")
 </template>
 
 <script lang="ts">

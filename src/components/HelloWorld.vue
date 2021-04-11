@@ -1,7 +1,7 @@
 <template lang="pug">
 h1
   | {{ msg }}
-button(@click="count++")
+el-button(type="primary", @click="count++")
   | count is: {{ count }}
 </template>
 
