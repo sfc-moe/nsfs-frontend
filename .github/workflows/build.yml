@@ -11,13 +11,9 @@ jobs:
         with:
           node-version: '14'
       - name: Install Dependencies
-        run: |
-          cd web
-          yarn
+        run: yarn
       - name: Lint
-        run: |
-          cd web
-          yarn lint
+        run: yarn lint
   build:
     runs-on: ubuntu-latest
     steps:
@@ -26,10 +22,6 @@ jobs:
         with:
           node-version: '14'
       - name: Install Dependencies
-        run: |
-          cd web
-          yarn
+        run: yarn
       - name: Build
-        run: |
-          cd web
-          yarn build
+        run: yarn build
